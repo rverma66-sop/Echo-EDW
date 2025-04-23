@@ -3,6 +3,138 @@
   "compatibilityLevel": 1200,
   "model": {
     "culture": "en-US",
+    "dataSources": [
+      {
+        "name": "SqlServer NJSQL2022 EDW",
+        "connectionString": "Provider=SQLOLEDB;Data Source=NJSQL2022;Initial Catalog=EDW;Integrated Security=SSPI;Persist Security Info=false",
+        "impersonationMode": "impersonateAccount",
+        "account": "ECHO\\dotnetapp",
+        "annotations": [
+          {
+            "name": "ConnectionEditUISource",
+            "value": "SqlServer"
+          }
+        ]
+      }
+    ],
+    "tables": [
+      {
+        "name": "Season Dim",
+        "columns": [
+          {
+            "name": "Season Key As Was",
+            "dataType": "int64",
+            "sourceColumn": "Season Key As Was",
+            "sourceProviderType": "BigInt"
+          },
+          {
+            "name": "Season Key As Is",
+            "dataType": "int64",
+            "sourceColumn": "Season Key As Is",
+            "sourceProviderType": "BigInt"
+          },
+          {
+            "name": "Brand Szn Code",
+            "dataType": "string",
+            "sourceColumn": "Brand Szn Code",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Szn",
+            "dataType": "string",
+            "sourceColumn": "Szn",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Szn Code",
+            "dataType": "string",
+            "sourceColumn": "Szn Code",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Szn Prefix",
+            "dataType": "string",
+            "sourceColumn": "Szn Prefix",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Szn Desc",
+            "dataType": "string",
+            "sourceColumn": "Szn Desc",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Szn Yr",
+            "dataType": "string",
+            "sourceColumn": "Szn Yr",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Szn Seq",
+            "dataType": "string",
+            "sourceColumn": "Szn Seq",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Szn Setting",
+            "dataType": "string",
+            "sourceColumn": "Szn Setting",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Szn Brand Name",
+            "dataType": "string",
+            "sourceColumn": "Szn Brand Name",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Szn Active Flag",
+            "dataType": "string",
+            "sourceColumn": "Szn Active Flag",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Begin Effective Date",
+            "dataType": "dateTime",
+            "sourceColumn": "Begin Effective Date",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          },
+          {
+            "name": "End Effective Date",
+            "dataType": "dateTime",
+            "sourceColumn": "End Effective Date",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Season Dim",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " \t\t\t\tSELECT [Logical].[Season Dim].*   FROM [Logical].[Season Dim] ",
+              "dataSource": "SqlServer NJSQL2022 EDW"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " \t\t\t\tSELECT [Logical].[Season Dim].*   FROM [Logical].[Season Dim] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "Season Dim"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "Logical"
+          }
+        ]
+      }
+    ],
     "annotations": [
       {
         "name": "ClientCompatibilityLevel",
