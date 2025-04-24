@@ -19,7 +19,1010 @@
     ],
     "tables": [
       {
-        "name": "Season Dim",
+        "name": "Customer",
+        "columns": [
+          {
+            "name": "Customer Key As Was",
+            "dataType": "int64",
+            "sourceColumn": "Customer Key As Was",
+            "sourceProviderType": "BigInt"
+          },
+          {
+            "name": "Customer Key As Is",
+            "dataType": "int64",
+            "sourceColumn": "Customer Key As Is",
+            "sourceProviderType": "BigInt"
+          },
+          {
+            "name": "Cust Num",
+            "dataType": "string",
+            "sourceColumn": "Cust Num",
+            "sourceProviderType": "Char",
+            "displayFolder": "Base Attributes"
+          },
+          {
+            "name": "Cust Name",
+            "dataType": "string",
+            "sourceColumn": "Cust Name",
+            "sourceProviderType": "Char",
+            "displayFolder": "Base Attributes"
+          },
+          {
+            "name": "Cust Terms",
+            "dataType": "string",
+            "sourceColumn": "Cust Terms",
+            "sourceProviderType": "Char",
+            "displayFolder": "Base Attributes"
+          },
+          {
+            "name": "Cust Type",
+            "dataType": "string",
+            "sourceColumn": "Cust Type",
+            "sourceProviderType": "Char",
+            "displayFolder": "Base Attributes"
+          },
+          {
+            "name": "Cust Super-Type",
+            "dataType": "string",
+            "sourceColumn": "Cust Super-Type",
+            "sourceProviderType": "Char",
+            "displayFolder": "Base Attributes"
+          },
+          {
+            "name": "Cust Royalty Flag",
+            "dataType": "string",
+            "sourceColumn": "Cust Royalty Flag",
+            "sourceProviderType": "Char",
+            "displayFolder": "Base Attributes"
+          },
+          {
+            "name": "Cust Continent",
+            "dataType": "string",
+            "sourceColumn": "Cust Continent",
+            "sourceProviderType": "Char",
+            "displayFolder": "Geographic Attributes"
+          },
+          {
+            "name": "Cust Country Name",
+            "dataType": "string",
+            "sourceColumn": "Cust Country Name",
+            "sourceProviderType": "Char",
+            "displayFolder": "Geographic Attributes"
+          },
+          {
+            "name": "Cust State Prov Abbrv",
+            "dataType": "string",
+            "sourceColumn": "Cust State Prov Abbrv",
+            "sourceProviderType": "Char",
+            "displayFolder": "Geographic Attributes"
+          },
+          {
+            "name": "Cust State Prov Name",
+            "dataType": "string",
+            "sourceColumn": "Cust State Prov Name",
+            "sourceProviderType": "Char",
+            "displayFolder": "Geographic Attributes"
+          },
+          {
+            "name": "Cust Region",
+            "dataType": "string",
+            "sourceColumn": "Cust Region",
+            "sourceProviderType": "Char",
+            "displayFolder": "Geographic Attributes"
+          },
+          {
+            "name": "Cust City",
+            "dataType": "string",
+            "sourceColumn": "Cust City",
+            "sourceProviderType": "Char",
+            "displayFolder": "Geographic Attributes"
+          },
+          {
+            "name": "Cust Zip Code",
+            "dataType": "string",
+            "sourceColumn": "Cust Zip Code",
+            "sourceProviderType": "Char",
+            "displayFolder": "Geographic Attributes"
+          },
+          {
+            "name": "Cust Addr",
+            "dataType": "string",
+            "sourceColumn": "Cust Addr",
+            "sourceProviderType": "Char",
+            "displayFolder": "Geographic Attributes"
+          },
+          {
+            "name": "Cust Addr 2",
+            "dataType": "string",
+            "sourceColumn": "Cust Addr 2",
+            "sourceProviderType": "Char",
+            "displayFolder": "Geographic Attributes"
+          },
+          {
+            "name": "Cust Echo Approval Flag",
+            "dataType": "string",
+            "sourceColumn": "Cust Echo Approval Flag",
+            "sourceProviderType": "Char",
+            "displayFolder": "Brand Approval Flags"
+          },
+          {
+            "name": "Cust Polo Mens Approval Flag",
+            "dataType": "string",
+            "sourceColumn": "Cust Polo Mens Approval Flag",
+            "sourceProviderType": "Char",
+            "displayFolder": "Brand Approval Flags"
+          },
+          {
+            "name": "Cust Polo Womens Approval Flag",
+            "dataType": "string",
+            "sourceColumn": "Cust Polo Womens Approval Flag",
+            "sourceProviderType": "Char",
+            "displayFolder": "Brand Approval Flags"
+          },
+          {
+            "name": "Cust Lauren Approval Flag",
+            "dataType": "string",
+            "sourceColumn": "Cust Lauren Approval Flag",
+            "sourceProviderType": "Char",
+            "displayFolder": "Brand Approval Flags"
+          },
+          {
+            "name": "Cust RLX Approval Flag",
+            "dataType": "string",
+            "sourceColumn": "Cust RLX Approval Flag",
+            "sourceProviderType": "Char",
+            "displayFolder": "Brand Approval Flags"
+          },
+          {
+            "name": "Cust Faherty Approval Flag",
+            "dataType": "string",
+            "sourceColumn": "Cust Faherty Approval Flag",
+            "sourceProviderType": "Char",
+            "displayFolder": "Brand Approval Flags"
+          },
+          {
+            "name": "Cust Acct Creation Dt",
+            "dataType": "string",
+            "sourceColumn": "Cust Acct Creation Dt",
+            "sourceProviderType": "Char",
+            "displayFolder": "Base Attributes"
+          },
+          {
+            "name": "Cust Acct Tenure Bucket",
+            "dataType": "string",
+            "sourceColumn": "Cust Acct Tenure Bucket",
+            "sourceProviderType": "Char",
+            "displayFolder": "Base Attributes"
+          },
+          {
+            "name": "Cust Acct Status",
+            "dataType": "string",
+            "sourceColumn": "Cust Acct Status",
+            "sourceProviderType": "Char",
+            "displayFolder": "Base Attributes"
+          },
+          {
+            "name": "Begin Effective Date",
+            "dataType": "dateTime",
+            "sourceColumn": "Begin Effective Date",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          },
+          {
+            "name": "End Effective Date",
+            "dataType": "dateTime",
+            "sourceColumn": "End Effective Date",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Customer Dim",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " \t\t\t\tSELECT [Logical].[Customer Dim].*   FROM [Logical].[Customer Dim] ",
+              "dataSource": "SqlServer NJSQL2022 EDW"
+            }
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Customer Geographic Hierarchy",
+            "levels": [
+              {
+                "name": "Cust Continent",
+                "ordinal": 0,
+                "column": "Cust Continent"
+              },
+              {
+                "name": "Cust Country Name",
+                "ordinal": 1,
+                "column": "Cust Country Name"
+              },
+              {
+                "name": "Cust State Prov Name",
+                "ordinal": 2,
+                "column": "Cust State Prov Name"
+              },
+              {
+                "name": "Cust City",
+                "ordinal": 3,
+                "column": "Cust City"
+              },
+              {
+                "name": "Cust Name",
+                "ordinal": 4,
+                "column": "Cust Name"
+              }
+            ]
+          },
+          {
+            "name": "Customer Type Hierarchy",
+            "levels": [
+              {
+                "name": "Cust Super-Type",
+                "ordinal": 0,
+                "column": "Cust Super-Type"
+              },
+              {
+                "name": "Cust Type",
+                "ordinal": 1,
+                "column": "Cust Type"
+              },
+              {
+                "name": "Cust Name",
+                "ordinal": 2,
+                "column": "Cust Name"
+              }
+            ]
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " \t\t\t\tSELECT [Logical].[Customer Dim].*   FROM [Logical].[Customer Dim] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "Customer Dim"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "Logical"
+          }
+        ]
+      },
+      {
+        "name": "Date",
+        "columns": [
+          {
+            "name": "Dt Key",
+            "dataType": "double",
+            "sourceColumn": "Dt Key",
+            "sourceProviderType": "Numeric"
+          },
+          {
+            "name": "Dt",
+            "dataType": "string",
+            "sourceColumn": "Dt",
+            "sourceProviderType": "WChar",
+            "displayFolder": "Base Attributes"
+          },
+          {
+            "name": "Dt Time Str",
+            "dataType": "dateTime",
+            "sourceColumn": "Dt Time Str",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp",
+            "displayFolder": "Base Attributes"
+          },
+          {
+            "name": "Dt Full Desc",
+            "dataType": "string",
+            "sourceColumn": "Dt Full Desc",
+            "sourceProviderType": "WChar",
+            "displayFolder": "Base Attributes"
+          },
+          {
+            "name": "Day of Wk Id",
+            "dataType": "int64",
+            "sourceColumn": "Day of Wk Id",
+            "sourceProviderType": "Integer",
+            "displayFolder": "Base Attributes"
+          },
+          {
+            "name": "Day of Wk Desc",
+            "dataType": "string",
+            "sourceColumn": "Day of Wk Desc",
+            "sourceProviderType": "WChar",
+            "displayFolder": "Base Attributes"
+          },
+          {
+            "name": "Day of Wk Desc Abbrv",
+            "dataType": "string",
+            "sourceColumn": "Day of Wk Desc Abbrv",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "Wkday Flag",
+            "dataType": "string",
+            "sourceColumn": "Wkday Flag",
+            "sourceProviderType": "Char",
+            "displayFolder": "Base Attributes"
+          },
+          {
+            "name": "Wkend Flag",
+            "dataType": "string",
+            "sourceColumn": "Wkend Flag",
+            "sourceProviderType": "Char",
+            "displayFolder": "Base Attributes"
+          },
+          {
+            "name": "Holiday Flag",
+            "dataType": "string",
+            "sourceColumn": "Holiday Flag",
+            "sourceProviderType": "Char",
+            "displayFolder": "Base Attributes"
+          },
+          {
+            "name": "Holiday Name",
+            "dataType": "string",
+            "sourceColumn": "Holiday Name",
+            "sourceProviderType": "Char",
+            "displayFolder": "Base Attributes"
+          },
+          {
+            "name": "Cal Wk",
+            "dataType": "string",
+            "sourceColumn": "Cal Wk",
+            "sourceProviderType": "Char",
+            "displayFolder": "Calendar Attributes"
+          },
+          {
+            "name": "Cal Mo",
+            "dataType": "string",
+            "sourceColumn": "Cal Mo",
+            "sourceProviderType": "WChar",
+            "displayFolder": "Calendar Attributes"
+          },
+          {
+            "name": "Cal Qtr",
+            "dataType": "string",
+            "sourceColumn": "Cal Qtr",
+            "sourceProviderType": "WChar",
+            "displayFolder": "Calendar Attributes"
+          },
+          {
+            "name": "Cal Half",
+            "dataType": "string",
+            "sourceColumn": "Cal Half",
+            "sourceProviderType": "WChar",
+            "displayFolder": "Calendar Attributes"
+          },
+          {
+            "name": "Cal Yr",
+            "dataType": "int64",
+            "sourceColumn": "Cal Yr",
+            "sourceProviderType": "Integer",
+            "displayFolder": "Calendar Attributes"
+          },
+          {
+            "name": "Cal Day of Mo Id",
+            "dataType": "int64",
+            "sourceColumn": "Cal Day of Mo Id",
+            "sourceProviderType": "Integer",
+            "displayFolder": "Calendar Attributes"
+          },
+          {
+            "name": "Cal Day of Yr Id",
+            "dataType": "int64",
+            "sourceColumn": "Cal Day of Yr Id",
+            "sourceProviderType": "Integer",
+            "displayFolder": "Calendar Attributes"
+          },
+          {
+            "name": "Cal Wk of Yr Id",
+            "dataType": "int64",
+            "sourceColumn": "Cal Wk of Yr Id",
+            "sourceProviderType": "Integer",
+            "displayFolder": "Calendar Attributes"
+          },
+          {
+            "name": "Cal Wk of Yr Desc",
+            "dataType": "string",
+            "sourceColumn": "Cal Wk of Yr Desc",
+            "sourceProviderType": "Char",
+            "displayFolder": "Calendar Attributes"
+          },
+          {
+            "name": "Cal Wk End Dt",
+            "dataType": "string",
+            "sourceColumn": "Cal Wk End Dt",
+            "sourceProviderType": "WChar",
+            "displayFolder": "Calendar Attributes"
+          },
+          {
+            "name": "Cal Mo of Yr Id",
+            "dataType": "int64",
+            "sourceColumn": "Cal Mo of Yr Id",
+            "sourceProviderType": "Integer",
+            "displayFolder": "Calendar Attributes"
+          },
+          {
+            "name": "Cal Mo of Yr Desc",
+            "dataType": "string",
+            "sourceColumn": "Cal Mo of Yr Desc",
+            "sourceProviderType": "WChar",
+            "displayFolder": "Calendar Attributes"
+          },
+          {
+            "name": "Cal Mo of Yr Abbrv",
+            "dataType": "string",
+            "sourceColumn": "Cal Mo of Yr Abbrv",
+            "sourceProviderType": "WChar",
+            "displayFolder": "Calendar Attributes"
+          },
+          {
+            "name": "Cal Mo End Dt",
+            "dataType": "string",
+            "sourceColumn": "Cal Mo End Dt",
+            "sourceProviderType": "WChar",
+            "displayFolder": "Calendar Attributes"
+          },
+          {
+            "name": "Cal Qtr of Yr Id",
+            "dataType": "int64",
+            "sourceColumn": "Cal Qtr of Yr Id",
+            "sourceProviderType": "Integer",
+            "displayFolder": "Calendar Attributes"
+          },
+          {
+            "name": "Cal Qtr of Yr Desc",
+            "dataType": "string",
+            "sourceColumn": "Cal Qtr of Yr Desc",
+            "sourceProviderType": "Char",
+            "displayFolder": "Calendar Attributes"
+          },
+          {
+            "name": "Cal Qtr End Dt",
+            "dataType": "string",
+            "sourceColumn": "Cal Qtr End Dt",
+            "sourceProviderType": "WChar",
+            "displayFolder": "Calendar Attributes"
+          },
+          {
+            "name": "Cal Half of Yr Id",
+            "dataType": "int64",
+            "sourceColumn": "Cal Half of Yr Id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "Cal Half of Yr Desc",
+            "dataType": "string",
+            "sourceColumn": "Cal Half of Yr Desc",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Fisc Wk",
+            "dataType": "string",
+            "sourceColumn": "Fisc Wk",
+            "sourceProviderType": "Char",
+            "displayFolder": "Fiscal Attributes"
+          },
+          {
+            "name": "Fisc Mo",
+            "dataType": "string",
+            "sourceColumn": "Fisc Mo",
+            "sourceProviderType": "WChar",
+            "displayFolder": "Fiscal Attributes"
+          },
+          {
+            "name": "Fisc Qtr",
+            "dataType": "string",
+            "sourceColumn": "Fisc Qtr",
+            "sourceProviderType": "Char",
+            "displayFolder": "Fiscal Attributes"
+          },
+          {
+            "name": "Fisc Half",
+            "dataType": "string",
+            "sourceColumn": "Fisc Half",
+            "sourceProviderType": "Char",
+            "displayFolder": "Fiscal Attributes"
+          },
+          {
+            "name": "Fisc Yr",
+            "dataType": "int64",
+            "sourceColumn": "Fisc Yr",
+            "sourceProviderType": "Integer",
+            "displayFolder": "Fiscal Attributes"
+          },
+          {
+            "name": "Fisc Day of Mo Id",
+            "dataType": "int64",
+            "sourceColumn": "Fisc Day of Mo Id",
+            "sourceProviderType": "BigInt",
+            "displayFolder": "Fiscal Attributes"
+          },
+          {
+            "name": "Fisc Day of Yr Id",
+            "dataType": "int64",
+            "sourceColumn": "Fisc Day of Yr Id",
+            "sourceProviderType": "BigInt",
+            "displayFolder": "Fiscal Attributes"
+          },
+          {
+            "name": "Fisc Wk of Yr Id",
+            "dataType": "int64",
+            "sourceColumn": "Fisc Wk of Yr Id",
+            "sourceProviderType": "Integer",
+            "displayFolder": "Fiscal Attributes"
+          },
+          {
+            "name": "Fisc Wk of Year Desc",
+            "dataType": "string",
+            "sourceColumn": "Fisc Wk of Year Desc",
+            "sourceProviderType": "Char",
+            "displayFolder": "Fiscal Attributes"
+          },
+          {
+            "name": "Fisc Wk End Dt",
+            "dataType": "string",
+            "sourceColumn": "Fisc Wk End Dt",
+            "sourceProviderType": "WChar",
+            "displayFolder": "Fiscal Attributes"
+          },
+          {
+            "name": "Fisc Mo of Yr Id",
+            "dataType": "int64",
+            "sourceColumn": "Fisc Mo of Yr Id",
+            "sourceProviderType": "Integer",
+            "displayFolder": "Fiscal Attributes"
+          },
+          {
+            "name": "Fisc Mo of Yr Desc",
+            "dataType": "string",
+            "sourceColumn": "Fisc Mo of Yr Desc",
+            "sourceProviderType": "Char",
+            "displayFolder": "Fiscal Attributes"
+          },
+          {
+            "name": "Fisc Mo of Yr Abbrv",
+            "dataType": "string",
+            "sourceColumn": "Fisc Mo of Yr Abbrv",
+            "sourceProviderType": "Char",
+            "displayFolder": "Fiscal Attributes"
+          },
+          {
+            "name": "Fisc Mo End Dt",
+            "dataType": "string",
+            "sourceColumn": "Fisc Mo End Dt",
+            "sourceProviderType": "WChar",
+            "displayFolder": "Fiscal Attributes"
+          },
+          {
+            "name": "Fisc Qtr of Yr Id",
+            "dataType": "int64",
+            "sourceColumn": "Fisc Qtr of Yr Id",
+            "sourceProviderType": "Integer",
+            "displayFolder": "Fiscal Attributes"
+          },
+          {
+            "name": "Fisc Qtr of Yr Desc",
+            "dataType": "string",
+            "sourceColumn": "Fisc Qtr of Yr Desc",
+            "sourceProviderType": "Char",
+            "displayFolder": "Fiscal Attributes"
+          },
+          {
+            "name": "Fisc Qtr End Dt",
+            "dataType": "string",
+            "sourceColumn": "Fisc Qtr End Dt",
+            "sourceProviderType": "WChar",
+            "displayFolder": "Fiscal Attributes"
+          },
+          {
+            "name": "Fisc Half of Yr Id",
+            "dataType": "int64",
+            "sourceColumn": "Fisc Half of Yr Id",
+            "sourceProviderType": "Integer",
+            "displayFolder": "Fiscal Attributes"
+          },
+          {
+            "name": "Fisc Half of Yr Desc",
+            "dataType": "string",
+            "sourceColumn": "Fisc Half of Yr Desc",
+            "sourceProviderType": "Char",
+            "displayFolder": "Fiscal Attributes"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Date Dim",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " \t\t\t\tSELECT [Logical].[Date Dim].*   FROM [Logical].[Date Dim] ",
+              "dataSource": "SqlServer NJSQL2022 EDW"
+            }
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Fiscal Hierarchy",
+            "levels": [
+              {
+                "name": "Fisc Yr",
+                "ordinal": 0,
+                "column": "Fisc Yr"
+              },
+              {
+                "name": "Fisc Half",
+                "ordinal": 1,
+                "column": "Fisc Half"
+              },
+              {
+                "name": "Fisc Qtr",
+                "ordinal": 2,
+                "column": "Fisc Qtr"
+              },
+              {
+                "name": "Fisc Mo",
+                "ordinal": 3,
+                "column": "Fisc Mo"
+              },
+              {
+                "name": "Fisc Wk",
+                "ordinal": 4,
+                "column": "Fisc Wk"
+              },
+              {
+                "name": "Dt",
+                "ordinal": 5,
+                "column": "Dt"
+              }
+            ]
+          },
+          {
+            "name": "Calendar Hierarchy",
+            "levels": [
+              {
+                "name": "Cal Yr",
+                "ordinal": 0,
+                "column": "Cal Yr"
+              },
+              {
+                "name": "Cal Half",
+                "ordinal": 1,
+                "column": "Cal Half"
+              },
+              {
+                "name": "Cal Qtr",
+                "ordinal": 2,
+                "column": "Cal Qtr"
+              },
+              {
+                "name": "Cal Mo",
+                "ordinal": 3,
+                "column": "Cal Mo"
+              },
+              {
+                "name": "Cal Wk",
+                "ordinal": 4,
+                "column": "Cal Wk"
+              },
+              {
+                "name": "Dt",
+                "ordinal": 5,
+                "column": "Dt"
+              }
+            ]
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " \t\t\t\tSELECT [Logical].[Date Dim].*   FROM [Logical].[Date Dim] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "Date Dim"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "Logical"
+          }
+        ]
+      },
+      {
+        "name": "Location",
+        "columns": [
+          {
+            "name": "Location Key As Was",
+            "dataType": "int64",
+            "sourceColumn": "Location Key As Was",
+            "sourceProviderType": "BigInt"
+          },
+          {
+            "name": "Location Key As Is",
+            "dataType": "int64",
+            "sourceColumn": "Location Key As Is",
+            "sourceProviderType": "BigInt"
+          },
+          {
+            "name": "Loc Code",
+            "dataType": "string",
+            "sourceColumn": "Loc Code",
+            "sourceProviderType": "Char",
+            "displayFolder": "Location Attributes"
+          },
+          {
+            "name": "Loc Name",
+            "dataType": "string",
+            "sourceColumn": "Loc Name",
+            "sourceProviderType": "Char",
+            "displayFolder": "Location Attributes"
+          },
+          {
+            "name": "Loc Street Addr",
+            "dataType": "string",
+            "sourceColumn": "Loc Street Addr",
+            "sourceProviderType": "Char",
+            "displayFolder": "Location Attributes"
+          },
+          {
+            "name": "Loc Street Addr 2",
+            "dataType": "string",
+            "sourceColumn": "Loc Street Addr 2",
+            "sourceProviderType": "Char",
+            "displayFolder": "Location Attributes"
+          },
+          {
+            "name": "Loc City",
+            "dataType": "string",
+            "sourceColumn": "Loc City",
+            "sourceProviderType": "Char",
+            "displayFolder": "Location Attributes"
+          },
+          {
+            "name": "Loc Continent",
+            "dataType": "string",
+            "sourceColumn": "Loc Continent",
+            "sourceProviderType": "Char",
+            "displayFolder": "Location Attributes"
+          },
+          {
+            "name": "Loc Country Name",
+            "dataType": "string",
+            "sourceColumn": "Loc Country Name",
+            "sourceProviderType": "Char",
+            "displayFolder": "Location Attributes"
+          },
+          {
+            "name": "Loc State Prov Abbrv",
+            "dataType": "string",
+            "sourceColumn": "Loc State Prov Abbrv",
+            "sourceProviderType": "Char",
+            "displayFolder": "Location Attributes"
+          },
+          {
+            "name": "Loc State Prov Name",
+            "dataType": "string",
+            "sourceColumn": "Loc State Prov Name",
+            "sourceProviderType": "Char",
+            "displayFolder": "Location Attributes"
+          },
+          {
+            "name": "Loc Postal Code",
+            "dataType": "string",
+            "sourceColumn": "Loc Postal Code",
+            "sourceProviderType": "Char",
+            "displayFolder": "Location Attributes"
+          },
+          {
+            "name": "Loc Virtual Flag",
+            "dataType": "string",
+            "sourceColumn": "Loc Virtual Flag",
+            "sourceProviderType": "Char",
+            "displayFolder": "Location Attributes"
+          },
+          {
+            "name": "Loc Physical Loc",
+            "dataType": "string",
+            "sourceColumn": "Loc Physical Loc",
+            "sourceProviderType": "Char",
+            "displayFolder": "Location Attributes"
+          },
+          {
+            "name": "Loc Selling Flag",
+            "dataType": "string",
+            "sourceColumn": "Loc Selling Flag",
+            "sourceProviderType": "Char",
+            "displayFolder": "Location Attributes"
+          },
+          {
+            "name": "Loc Inventory Flag",
+            "dataType": "string",
+            "sourceColumn": "Loc Inventory Flag",
+            "sourceProviderType": "Char",
+            "displayFolder": "Location Attributes"
+          },
+          {
+            "name": "Loc Super Type",
+            "dataType": "string",
+            "sourceColumn": "Loc Super Type",
+            "sourceProviderType": "Char",
+            "displayFolder": "Location Attributes"
+          },
+          {
+            "name": "Loc Type",
+            "dataType": "string",
+            "sourceColumn": "Loc Type",
+            "sourceProviderType": "Char",
+            "displayFolder": "Location Attributes"
+          },
+          {
+            "name": "Co Code",
+            "dataType": "string",
+            "sourceColumn": "Co Code",
+            "sourceProviderType": "Char",
+            "displayFolder": "Company Attributes"
+          },
+          {
+            "name": "Co Name",
+            "dataType": "string",
+            "sourceColumn": "Co Name",
+            "sourceProviderType": "Char",
+            "displayFolder": "Company Attributes"
+          },
+          {
+            "name": "Co Bus Street Addr",
+            "dataType": "string",
+            "sourceColumn": "Co Bus Street Addr",
+            "sourceProviderType": "Char",
+            "displayFolder": "Company Attributes"
+          },
+          {
+            "name": "Co Bus Street Addr 2",
+            "dataType": "string",
+            "sourceColumn": "Co Bus Street Addr 2",
+            "sourceProviderType": "Char",
+            "displayFolder": "Company Attributes"
+          },
+          {
+            "name": "Co Bus City",
+            "dataType": "string",
+            "sourceColumn": "Co Bus City",
+            "sourceProviderType": "Char",
+            "displayFolder": "Company Attributes"
+          },
+          {
+            "name": "Co Bus Continent Name",
+            "dataType": "string",
+            "sourceColumn": "Co Bus Continent Name",
+            "sourceProviderType": "Char",
+            "displayFolder": "Company Attributes"
+          },
+          {
+            "name": "Co Bus Country Name",
+            "dataType": "string",
+            "sourceColumn": "Co Bus Country Name",
+            "sourceProviderType": "Char",
+            "displayFolder": "Company Attributes"
+          },
+          {
+            "name": "Co Bus State Prov",
+            "dataType": "string",
+            "sourceColumn": "Co Bus State Prov",
+            "sourceProviderType": "Char",
+            "displayFolder": "Company Attributes"
+          },
+          {
+            "name": "Co Bus Postal Code",
+            "dataType": "string",
+            "sourceColumn": "Co Bus Postal Code",
+            "sourceProviderType": "Char",
+            "displayFolder": "Company Attributes"
+          },
+          {
+            "name": "Co Default Curr",
+            "dataType": "string",
+            "sourceColumn": "Co Default Curr",
+            "sourceProviderType": "Char",
+            "displayFolder": "Company Attributes"
+          },
+          {
+            "name": "Begin Effective Date",
+            "dataType": "dateTime",
+            "sourceColumn": "Begin Effective Date",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          },
+          {
+            "name": "End Effective Date",
+            "dataType": "dateTime",
+            "sourceColumn": "End Effective Date",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Location Dim",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " \t\t\t\tSELECT [Logical].[Location Dim].*   FROM [Logical].[Location Dim] ",
+              "dataSource": "SqlServer NJSQL2022 EDW"
+            }
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Physical Location Hierarchy",
+            "levels": [
+              {
+                "name": "Loc Physical Loc",
+                "ordinal": 0,
+                "column": "Loc Physical Loc"
+              },
+              {
+                "name": "Loc Name",
+                "ordinal": 1,
+                "column": "Loc Name"
+              }
+            ]
+          },
+          {
+            "name": "Geographic Location Hierarchy",
+            "levels": [
+              {
+                "name": "Loc Continent",
+                "ordinal": 0,
+                "column": "Loc Continent"
+              },
+              {
+                "name": "Loc Country Name",
+                "ordinal": 1,
+                "column": "Loc Country Name"
+              },
+              {
+                "name": "Loc State Prov Name",
+                "ordinal": 2,
+                "column": "Loc State Prov Name"
+              },
+              {
+                "name": "Loc City",
+                "ordinal": 3,
+                "column": "Loc City"
+              },
+              {
+                "name": "Loc Name",
+                "ordinal": 4,
+                "column": "Loc Name"
+              }
+            ]
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " \t\t\t\tSELECT [Logical].[Location Dim].*   FROM [Logical].[Location Dim] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "Location Dim"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "Logical"
+          }
+        ]
+      },
+      {
+        "name": "Season",
         "columns": [
           {
             "name": "Season Key As Was",
@@ -43,55 +1046,64 @@
             "name": "Szn",
             "dataType": "string",
             "sourceColumn": "Szn",
-            "sourceProviderType": "Char"
+            "sourceProviderType": "Char",
+            "displayFolder": "Base Attributes"
           },
           {
             "name": "Szn Code",
             "dataType": "string",
             "sourceColumn": "Szn Code",
-            "sourceProviderType": "Char"
+            "sourceProviderType": "Char",
+            "displayFolder": "Base Attributes"
           },
           {
             "name": "Szn Prefix",
             "dataType": "string",
             "sourceColumn": "Szn Prefix",
-            "sourceProviderType": "Char"
+            "sourceProviderType": "Char",
+            "displayFolder": "Base Attributes"
           },
           {
             "name": "Szn Desc",
             "dataType": "string",
             "sourceColumn": "Szn Desc",
-            "sourceProviderType": "Char"
+            "sourceProviderType": "Char",
+            "displayFolder": "Base Attributes"
           },
           {
             "name": "Szn Yr",
             "dataType": "string",
             "sourceColumn": "Szn Yr",
-            "sourceProviderType": "Char"
+            "sourceProviderType": "Char",
+            "displayFolder": "Base Attributes"
           },
           {
             "name": "Szn Seq",
             "dataType": "string",
             "sourceColumn": "Szn Seq",
-            "sourceProviderType": "Char"
+            "sourceProviderType": "Char",
+            "displayFolder": "Base Attributes"
           },
           {
             "name": "Szn Setting",
             "dataType": "string",
             "sourceColumn": "Szn Setting",
-            "sourceProviderType": "Char"
+            "sourceProviderType": "Char",
+            "displayFolder": "Base Attributes"
           },
           {
             "name": "Szn Brand Name",
             "dataType": "string",
             "sourceColumn": "Szn Brand Name",
-            "sourceProviderType": "Char"
+            "sourceProviderType": "Char",
+            "displayFolder": "Base Attributes"
           },
           {
             "name": "Szn Active Flag",
             "dataType": "string",
             "sourceColumn": "Szn Active Flag",
-            "sourceProviderType": "Char"
+            "sourceProviderType": "Char",
+            "displayFolder": "Base Attributes"
           },
           {
             "name": "Begin Effective Date",

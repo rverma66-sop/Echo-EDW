@@ -12,12 +12,12 @@
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Development' ">
     <OutputPath>bin\</OutputPath>
-    <DeploymentServerName>localhost</DeploymentServerName>
-    <DeploymentServerEdition>Developer</DeploymentServerEdition>
+    <DeploymentServerName>NJSQL2022</DeploymentServerName>
+    <DeploymentServerEdition>Standard</DeploymentServerEdition>
     <DeploymentServerVersion>Unknown</DeploymentServerVersion>
     <DeploymentServerDatabase>EchoEDW_SSAS</DeploymentServerDatabase>
-    <DeploymentServerCubeName>Model</DeploymentServerCubeName>
-    <DeploymentOptionProcessing>Default</DeploymentOptionProcessing>
+    <DeploymentServerCubeName>EchoEDW_SSAS</DeploymentServerCubeName>
+    <DeploymentOptionProcessing>DoNotProcess</DeploymentOptionProcessing>
     <DeploymentOptionTransactionalDeployment>False</DeploymentOptionTransactionalDeployment>
     <DeploymentOptionADALCache>Default</DeploymentOptionADALCache>
     <DeploymentOptionDirectQueryMode>InMemory</DeploymentOptionDirectQueryMode>
