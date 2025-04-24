@@ -1145,6 +1145,572 @@
             "value": "Logical"
           }
         ]
+      },
+      {
+        "name": "Product",
+        "columns": [
+          {
+            "name": "Product Key As Was",
+            "dataType": "int64",
+            "sourceColumn": "Product Key As Was",
+            "sourceProviderType": "BigInt"
+          },
+          {
+            "name": "Product Key As Is",
+            "dataType": "int64",
+            "sourceColumn": "Product Key As Is",
+            "sourceProviderType": "BigInt"
+          },
+          {
+            "name": "SKU Code",
+            "dataType": "string",
+            "sourceColumn": "SKU Code",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Size Code",
+            "dataType": "string",
+            "sourceColumn": "Size Code",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Color",
+            "dataType": "string",
+            "sourceColumn": "Color",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Color Code",
+            "dataType": "string",
+            "sourceColumn": "Color Code",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Color Desc",
+            "dataType": "string",
+            "sourceColumn": "Color Desc",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Color NRF Code",
+            "dataType": "string",
+            "sourceColumn": "Color NRF Code",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Color Family",
+            "dataType": "string",
+            "sourceColumn": "Color Family",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Color Solid/Print",
+            "dataType": "string",
+            "sourceColumn": "Color Solid/Print",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Color",
+            "dataType": "string",
+            "sourceColumn": "Style Color",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Color Carry Forward Flag",
+            "dataType": "string",
+            "sourceColumn": "Style Color Carry Forward Flag",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Color Dropped Flag",
+            "dataType": "string",
+            "sourceColumn": "Style Color Dropped Flag",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Color Sold Out Flag",
+            "dataType": "string",
+            "sourceColumn": "Style Color Sold Out Flag",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Color Called Out Dt",
+            "dataType": "string",
+            "sourceColumn": "Style Color Called Out Dt",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Color Dropped Dt",
+            "dataType": "string",
+            "sourceColumn": "Style Color Dropped Dt",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Color Sold Out Dt",
+            "dataType": "string",
+            "sourceColumn": "Style Color Sold Out Dt",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Color Status",
+            "dataType": "string",
+            "sourceColumn": "Style Color Status",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Color MSRP USD",
+            "dataType": "string",
+            "sourceColumn": "Style Color MSRP USD",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Color Price",
+            "dataType": "string",
+            "sourceColumn": "Style Color Price",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Color Cost",
+            "dataType": "string",
+            "sourceColumn": "Style Color Cost",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Color MOQ",
+            "dataType": "string",
+            "sourceColumn": "Style Color MOQ",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style",
+            "dataType": "string",
+            "sourceColumn": "Style",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Num",
+            "dataType": "string",
+            "sourceColumn": "Style Num",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Desc",
+            "dataType": "string",
+            "sourceColumn": "Style Desc",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Div",
+            "dataType": "string",
+            "sourceColumn": "Style Div",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Master Brand",
+            "dataType": "string",
+            "sourceColumn": "Style Master Brand",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Brand",
+            "dataType": "string",
+            "sourceColumn": "Style Brand",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Bus Unit",
+            "dataType": "string",
+            "sourceColumn": "Style Bus Unit",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Market Segment",
+            "dataType": "string",
+            "sourceColumn": "Style Market Segment",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Rtl Dept Desc",
+            "dataType": "string",
+            "sourceColumn": "Style Rtl Dept Desc",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Class Desc",
+            "dataType": "string",
+            "sourceColumn": "Style Class Desc",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Fabrication",
+            "dataType": "string",
+            "sourceColumn": "Style Fabrication",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Fabrication Content",
+            "dataType": "string",
+            "sourceColumn": "Style Fabrication Content",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Fabric Construction",
+            "dataType": "string",
+            "sourceColumn": "Style Fabric Construction",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Primary Motif",
+            "dataType": "string",
+            "sourceColumn": "Style Primary Motif",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Secondary Motif",
+            "dataType": "string",
+            "sourceColumn": "Style Secondary Motif",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Preferred Vendor Code",
+            "dataType": "string",
+            "sourceColumn": "Style Preferred Vendor Code",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Addl Attr",
+            "dataType": "string",
+            "sourceColumn": "Style Addl Attr",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Cert 1",
+            "dataType": "string",
+            "sourceColumn": "Style Cert 1",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Cert 2",
+            "dataType": "string",
+            "sourceColumn": "Style Cert 2",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Cert 3",
+            "dataType": "string",
+            "sourceColumn": "Style Cert 3",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Cert 4",
+            "dataType": "string",
+            "sourceColumn": "Style Cert 4",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Cert 5",
+            "dataType": "string",
+            "sourceColumn": "Style Cert 5",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Collection",
+            "dataType": "string",
+            "sourceColumn": "Style Collection",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Converted from Style",
+            "dataType": "string",
+            "sourceColumn": "Style Converted from Style",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Country of Origin",
+            "dataType": "string",
+            "sourceColumn": "Style Country of Origin",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Customer",
+            "dataType": "string",
+            "sourceColumn": "Style Customer",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Design Origin",
+            "dataType": "string",
+            "sourceColumn": "Style Design Origin",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Designer",
+            "dataType": "string",
+            "sourceColumn": "Style Designer",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Exclusive Flag",
+            "dataType": "string",
+            "sourceColumn": "Style Exclusive Flag",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Finishing Attributes",
+            "dataType": "string",
+            "sourceColumn": "Style Finishing Attributes",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Fur",
+            "dataType": "string",
+            "sourceColumn": "Style Fur",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style HTS Code",
+            "dataType": "string",
+            "sourceColumn": "Style HTS Code",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style License Group",
+            "dataType": "string",
+            "sourceColumn": "Style License Group",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Packed Unit Weight",
+            "dataType": "string",
+            "sourceColumn": "Style Packed Unit Weight",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Patent",
+            "dataType": "string",
+            "sourceColumn": "Style Patent",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style PD Manager",
+            "dataType": "string",
+            "sourceColumn": "Style PD Manager",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Print Technique",
+            "dataType": "string",
+            "sourceColumn": "Style Print Technique",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Product Dimension",
+            "dataType": "string",
+            "sourceColumn": "Style Product Dimension",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Sales Market",
+            "dataType": "string",
+            "sourceColumn": "Style Sales Market",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Screen Count",
+            "dataType": "string",
+            "sourceColumn": "Style Screen Count",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Selling Attributes",
+            "dataType": "string",
+            "sourceColumn": "Style Selling Attributes",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Ship Unit Height",
+            "dataType": "string",
+            "sourceColumn": "Style Ship Unit Height",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Ship Unit Length",
+            "dataType": "string",
+            "sourceColumn": "Style Ship Unit Length",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Ship Unit Width",
+            "dataType": "string",
+            "sourceColumn": "Style Ship Unit Width",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Silhouette",
+            "dataType": "string",
+            "sourceColumn": "Style Silhouette",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Size Scale",
+            "dataType": "string",
+            "sourceColumn": "Style Size Scale",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Stage",
+            "dataType": "string",
+            "sourceColumn": "Style Stage",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Structure",
+            "dataType": "string",
+            "sourceColumn": "Style Structure",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Prefix",
+            "dataType": "string",
+            "sourceColumn": "Style Prefix",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Technical Attributes",
+            "dataType": "string",
+            "sourceColumn": "Style Technical Attributes",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Customer Style Number",
+            "dataType": "string",
+            "sourceColumn": "Style Customer Style Number",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Key Concept",
+            "dataType": "string",
+            "sourceColumn": "Style Key Concept",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Lead Time",
+            "dataType": "string",
+            "sourceColumn": "Style Lead Time",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Momme Weight",
+            "dataType": "string",
+            "sourceColumn": "Style Momme Weight",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Product Sub Class",
+            "dataType": "string",
+            "sourceColumn": "Style Product Sub Class",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Ref Num",
+            "dataType": "string",
+            "sourceColumn": "Style Ref Num",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Begin Effective Date",
+            "dataType": "dateTime",
+            "sourceColumn": "Begin Effective Date",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          },
+          {
+            "name": "End Effective Date",
+            "dataType": "dateTime",
+            "sourceColumn": "End Effective Date",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Product Dim",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " \t\t\t\tSELECT [Logical].[Product Dim].*   FROM [Logical].[Product Dim] ",
+              "dataSource": "SqlServer NJSQL2022 EDW"
+            }
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Product Hierarchy",
+            "levels": [
+              {
+                "name": "Style Num",
+                "ordinal": 0,
+                "column": "Style Num"
+              },
+              {
+                "name": "Style Color",
+                "ordinal": 1,
+                "column": "Style Color"
+              },
+              {
+                "name": "SKU Code",
+                "ordinal": 2,
+                "column": "SKU Code"
+              }
+            ]
+          },
+          {
+            "name": "Main Classification Hierarchy"
+          },
+          {
+            "name": "Alternate Classification Hierarchy"
+          },
+          {
+            "name": "Fabrication Hierarchy"
+          },
+          {
+            "name": "Design Hierarchy"
+          },
+          {
+            "name": "Color Hierarchy",
+            "levels": [
+              {
+                "name": "Color Family",
+                "ordinal": 0,
+                "column": "Color Family"
+              },
+              {
+                "name": "Color Desc",
+                "ordinal": 1,
+                "column": "Color Desc"
+              },
+              {
+                "name": "Style Color",
+                "ordinal": 2,
+                "column": "Style Color"
+              }
+            ]
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " \t\t\t\tSELECT [Logical].[Product Dim].*   FROM [Logical].[Product Dim] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "Product Dim"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "Logical"
+          }
+        ]
       }
     ],
     "annotations": [
