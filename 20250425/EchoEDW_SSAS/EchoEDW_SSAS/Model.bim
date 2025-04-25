@@ -1783,6 +1783,203 @@
             "value": "Logical"
           }
         ]
+      },
+      {
+        "name": "Sales",
+        "columns": [
+          {
+            "name": "Product_Key_As_Was",
+            "dataType": "int64",
+            "sourceColumn": "Product_Key_As_Was",
+            "sourceProviderType": "BigInt"
+          },
+          {
+            "name": "Customer_Key_As_Was",
+            "dataType": "int64",
+            "sourceColumn": "Customer_Key_As_Was",
+            "sourceProviderType": "BigInt"
+          },
+          {
+            "name": "Season_Key_As_Was",
+            "dataType": "int64",
+            "sourceColumn": "Season_Key_As_Was",
+            "sourceProviderType": "BigInt"
+          },
+          {
+            "name": "Order_Entered_Date_Key",
+            "dataType": "double",
+            "sourceColumn": "Order_Entered_Date_Key",
+            "sourceProviderType": "Numeric"
+          },
+          {
+            "name": "Order_Start_Date_Key",
+            "dataType": "double",
+            "sourceColumn": "Order_Start_Date_Key",
+            "sourceProviderType": "Numeric"
+          },
+          {
+            "name": "Order_Cancel_Date_Key",
+            "dataType": "double",
+            "sourceColumn": "Order_Cancel_Date_Key",
+            "sourceProviderType": "Numeric"
+          },
+          {
+            "name": "Shipped_Date_Key",
+            "dataType": "double",
+            "sourceColumn": "Shipped_Date_Key",
+            "sourceProviderType": "Numeric"
+          },
+          {
+            "name": "Ship_To_Location_Key",
+            "dataType": "int64",
+            "sourceColumn": "Ship_To_Location_Key",
+            "sourceProviderType": "BigInt"
+          },
+          {
+            "name": "Ship_From_Location_Key",
+            "dataType": "int64",
+            "sourceColumn": "Ship_From_Location_Key",
+            "sourceProviderType": "BigInt"
+          },
+          {
+            "name": "Mark_For_Location_Key",
+            "dataType": "int64",
+            "sourceColumn": "Mark_For_Location_Key",
+            "sourceProviderType": "BigInt"
+          },
+          {
+            "name": "Ordered_Location_Key",
+            "dataType": "int64",
+            "sourceColumn": "Ordered_Location_Key",
+            "sourceProviderType": "BigInt"
+          },
+          {
+            "name": "Booked_Units",
+            "dataType": "int64",
+            "sourceColumn": "Booked_Units",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "Booked_Amount",
+            "dataType": "double",
+            "sourceColumn": "Booked_Amount",
+            "sourceProviderType": "Double"
+          },
+          {
+            "name": "Echo Order #",
+            "dataType": "double",
+            "sourceColumn": "Echo Order #",
+            "sourceProviderType": "Numeric"
+          },
+          {
+            "name": "Custom PO #",
+            "dataType": "string",
+            "sourceColumn": "Custom PO #",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Customer Department #",
+            "dataType": "string",
+            "sourceColumn": "Customer Department #",
+            "sourceProviderType": "Char"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Sales Fact",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " \t\t\t\tSELECT [Logical].[Sales Fact].*   FROM [Logical].[Sales Fact] ",
+              "dataSource": "SqlServer NJSQL2022 EDW"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " \t\t\t\tSELECT [Logical].[Sales Fact].*   FROM [Logical].[Sales Fact] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "Sales Fact"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "Logical"
+          }
+        ]
+      },
+      {
+        "name": "Security_Product",
+        "columns": [
+          {
+            "name": "Product Key As Was",
+            "dataType": "int64",
+            "sourceColumn": "Product Key As Was",
+            "sourceProviderType": "BigInt"
+          },
+          {
+            "name": "Style Brand",
+            "dataType": "string",
+            "sourceColumn": "Style Brand",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "UserEmail",
+            "dataType": "string",
+            "sourceColumn": "UserEmail",
+            "sourceProviderType": "WChar"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "vw_Security_Product",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " \t\t\t\tSELECT [Warehouse].[vw_Security_Product].*   FROM [Warehouse].[vw_Security_Product] ",
+              "dataSource": "SqlServer NJSQL2022 EDW"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " \t\t\t\tSELECT [Warehouse].[vw_Security_Product].*   FROM [Warehouse].[vw_Security_Product] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "vw_Security_Product"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "Warehouse"
+          }
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "name": "a3008048-e16d-4340-8d05-728c3f297143",
+        "fromTable": "Sales",
+        "fromColumn": "Product_Key_As_Was",
+        "toTable": "Product",
+        "toColumn": "Product Key As Was"
+      },
+      {
+        "name": "bba2da99-ae6a-4866-b1de-06be912d79d9",
+        "fromTable": "Sales",
+        "fromColumn": "Customer_Key_As_Was",
+        "toTable": "Customer",
+        "toColumn": "Customer Key As Was"
+      },
+      {
+        "name": "26a2aa2f-d38f-41ed-be59-2f3bf62e1e5f",
+        "fromTable": "Sales",
+        "fromColumn": "Season_Key_As_Was",
+        "toTable": "Season",
+        "toColumn": "Season Key As Was"
       }
     ],
     "annotations": [
