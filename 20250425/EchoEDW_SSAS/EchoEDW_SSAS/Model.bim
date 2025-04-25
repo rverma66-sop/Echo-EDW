@@ -25,12 +25,14 @@
           {
             "name": "Customer Key As Was",
             "dataType": "int64",
+            "isHidden": true,
             "sourceColumn": "Customer Key As Was",
             "sourceProviderType": "BigInt"
           },
           {
             "name": "Customer Key As Is",
             "dataType": "int64",
+            "isHidden": true,
             "sourceColumn": "Customer Key As Is",
             "sourceProviderType": "BigInt"
           },
@@ -205,6 +207,7 @@
           {
             "name": "Begin Effective Date",
             "dataType": "dateTime",
+            "isHidden": true,
             "sourceColumn": "Begin Effective Date",
             "formatString": "General Date",
             "sourceProviderType": "DBTimeStamp"
@@ -212,6 +215,7 @@
           {
             "name": "End Effective Date",
             "dataType": "dateTime",
+            "isHidden": true,
             "sourceColumn": "End Effective Date",
             "formatString": "General Date",
             "sourceProviderType": "DBTimeStamp"
@@ -231,6 +235,7 @@
         "hierarchies": [
           {
             "name": "Customer Geographic Hierarchy",
+            "displayFolder": ".Hierarchies",
             "levels": [
               {
                 "name": "Cust Continent",
@@ -261,6 +266,7 @@
           },
           {
             "name": "Customer Type Hierarchy",
+            "displayFolder": ".Hierarchies",
             "levels": [
               {
                 "name": "Cust Super-Type",
@@ -1786,6 +1792,7 @@
       },
       {
         "name": "Sales",
+        "isHidden": true,
         "columns": [
           {
             "name": "Product_Key_As_Was",
@@ -1862,6 +1869,7 @@
           {
             "name": "Booked_Amount",
             "dataType": "double",
+            "isHidden": true,
             "sourceColumn": "Booked_Amount",
             "sourceProviderType": "Double"
           },
@@ -1957,6 +1965,36 @@
             "value": "Warehouse"
           }
         ]
+      },
+      {
+        "name": "Calculations",
+        "columns": [
+          {
+            "type": "calculatedTableColumn",
+            "name": "Value",
+            "dataType": "string",
+            "isNameInferred": true,
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "sourceColumn": "[Value]"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "CalculatedTable 1",
+            "source": {
+              "type": "calculated",
+              "expression": "{\"\"}"
+            }
+          }
+        ],
+        "measures": [
+          {
+            "name": "Booked Units",
+            "expression": " sum(Sales[Booked_Units])",
+            "displayFolder": "Sales Calculations"
+          }
+        ]
       }
     ],
     "relationships": [
@@ -1980,6 +2018,21 @@
         "fromColumn": "Season_Key_As_Was",
         "toTable": "Season",
         "toColumn": "Season Key As Was"
+      },
+      {
+        "name": "bca35fac-4081-4706-8915-5f8f46a14710",
+        "fromTable": "Sales",
+        "fromColumn": "Shipped_Date_Key",
+        "toTable": "Date",
+        "toColumn": "Dt Key"
+      },
+      {
+        "name": "7c81e33b-7f88-422c-9a17-b04e1ea1ae00",
+        "fromTable": "Sales",
+        "fromColumn": "Order_Cancel_Date_Key",
+        "toTable": "Date",
+        "toColumn": "Dt Key",
+        "isActive": false
       }
     ],
     "annotations": [
