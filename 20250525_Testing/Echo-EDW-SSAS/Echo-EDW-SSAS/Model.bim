@@ -1,0 +1,2046 @@
+{
+  "name": "SemanticModel",
+  "compatibilityLevel": 1200,
+  "model": {
+    "name": "EchoEDW_SSAS",
+    "culture": "en-US",
+    "dataSources": [
+      {
+        "name": "SqlServer NJSQL2022 EDW",
+        "connectionString": "Provider=SQLOLEDB;Data Source=NJSQL2022;Initial Catalog=EDW;Integrated Security=SSPI;Persist Security Info=false",
+        "impersonationMode": "impersonateAccount",
+        "account": "ECHO\\dotnetapp",
+        "annotations": [
+          {
+            "name": "ConnectionEditUISource",
+            "value": "SqlServer"
+          }
+        ]
+      }
+    ],
+    "tables": [
+      {
+        "name": "Customer",
+        "columns": [
+          {
+            "name": "Customer Key As Was",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "Customer Key As Was",
+            "sourceProviderType": "BigInt"
+          },
+          {
+            "name": "Customer Key As Is",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "Customer Key As Is",
+            "sourceProviderType": "BigInt"
+          },
+          {
+            "name": "Cust Num",
+            "dataType": "string",
+            "sourceColumn": "Cust Num",
+            "sourceProviderType": "Char",
+            "displayFolder": "Base Attributes"
+          },
+          {
+            "name": "Cust Name",
+            "dataType": "string",
+            "sourceColumn": "Cust Name",
+            "sourceProviderType": "Char",
+            "displayFolder": "Base Attributes"
+          },
+          {
+            "name": "Cust Terms",
+            "dataType": "string",
+            "sourceColumn": "Cust Terms",
+            "sourceProviderType": "Char",
+            "displayFolder": "Base Attributes"
+          },
+          {
+            "name": "Cust Type",
+            "dataType": "string",
+            "sourceColumn": "Cust Type",
+            "sourceProviderType": "Char",
+            "displayFolder": "Base Attributes"
+          },
+          {
+            "name": "Cust Super-Type",
+            "dataType": "string",
+            "sourceColumn": "Cust Super-Type",
+            "sourceProviderType": "Char",
+            "displayFolder": "Base Attributes"
+          },
+          {
+            "name": "Cust Royalty Flag",
+            "dataType": "string",
+            "sourceColumn": "Cust Royalty Flag",
+            "sourceProviderType": "Char",
+            "displayFolder": "Base Attributes"
+          },
+          {
+            "name": "Cust Continent",
+            "dataType": "string",
+            "sourceColumn": "Cust Continent",
+            "sourceProviderType": "Char",
+            "displayFolder": "Geographic Attributes"
+          },
+          {
+            "name": "Cust Country Name",
+            "dataType": "string",
+            "sourceColumn": "Cust Country Name",
+            "sourceProviderType": "Char",
+            "displayFolder": "Geographic Attributes"
+          },
+          {
+            "name": "Cust State Prov Abbrv",
+            "dataType": "string",
+            "sourceColumn": "Cust State Prov Abbrv",
+            "sourceProviderType": "Char",
+            "displayFolder": "Geographic Attributes"
+          },
+          {
+            "name": "Cust State Prov Name",
+            "dataType": "string",
+            "sourceColumn": "Cust State Prov Name",
+            "sourceProviderType": "Char",
+            "displayFolder": "Geographic Attributes"
+          },
+          {
+            "name": "Cust Region",
+            "dataType": "string",
+            "sourceColumn": "Cust Region",
+            "sourceProviderType": "Char",
+            "displayFolder": "Geographic Attributes"
+          },
+          {
+            "name": "Cust City",
+            "dataType": "string",
+            "sourceColumn": "Cust City",
+            "sourceProviderType": "Char",
+            "displayFolder": "Geographic Attributes"
+          },
+          {
+            "name": "Cust Zip Code",
+            "dataType": "string",
+            "sourceColumn": "Cust Zip Code",
+            "sourceProviderType": "Char",
+            "displayFolder": "Geographic Attributes"
+          },
+          {
+            "name": "Cust Addr",
+            "dataType": "string",
+            "sourceColumn": "Cust Addr",
+            "sourceProviderType": "Char",
+            "displayFolder": "Geographic Attributes"
+          },
+          {
+            "name": "Cust Addr 2",
+            "dataType": "string",
+            "sourceColumn": "Cust Addr 2",
+            "sourceProviderType": "Char",
+            "displayFolder": "Geographic Attributes"
+          },
+          {
+            "name": "Cust Echo Approval Flag",
+            "dataType": "string",
+            "sourceColumn": "Cust Echo Approval Flag",
+            "sourceProviderType": "Char",
+            "displayFolder": "Brand Approval Flags"
+          },
+          {
+            "name": "Cust Polo Mens Approval Flag",
+            "dataType": "string",
+            "sourceColumn": "Cust Polo Mens Approval Flag",
+            "sourceProviderType": "Char",
+            "displayFolder": "Brand Approval Flags"
+          },
+          {
+            "name": "Cust Polo Womens Approval Flag",
+            "dataType": "string",
+            "sourceColumn": "Cust Polo Womens Approval Flag",
+            "sourceProviderType": "Char",
+            "displayFolder": "Brand Approval Flags"
+          },
+          {
+            "name": "Cust Lauren Approval Flag",
+            "dataType": "string",
+            "sourceColumn": "Cust Lauren Approval Flag",
+            "sourceProviderType": "Char",
+            "displayFolder": "Brand Approval Flags"
+          },
+          {
+            "name": "Cust RLX Approval Flag",
+            "dataType": "string",
+            "sourceColumn": "Cust RLX Approval Flag",
+            "sourceProviderType": "Char",
+            "displayFolder": "Brand Approval Flags"
+          },
+          {
+            "name": "Cust Faherty Approval Flag",
+            "dataType": "string",
+            "sourceColumn": "Cust Faherty Approval Flag",
+            "sourceProviderType": "Char",
+            "displayFolder": "Brand Approval Flags"
+          },
+          {
+            "name": "Cust Acct Creation Dt",
+            "dataType": "string",
+            "sourceColumn": "Cust Acct Creation Dt",
+            "sourceProviderType": "Char",
+            "displayFolder": "Base Attributes"
+          },
+          {
+            "name": "Cust Acct Tenure Bucket",
+            "dataType": "string",
+            "sourceColumn": "Cust Acct Tenure Bucket",
+            "sourceProviderType": "Char",
+            "displayFolder": "Base Attributes"
+          },
+          {
+            "name": "Cust Acct Status",
+            "dataType": "string",
+            "sourceColumn": "Cust Acct Status",
+            "sourceProviderType": "Char",
+            "displayFolder": "Base Attributes"
+          },
+          {
+            "name": "Begin Effective Date",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "sourceColumn": "Begin Effective Date",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          },
+          {
+            "name": "End Effective Date",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "sourceColumn": "End Effective Date",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Customer Dim",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " \t\t\t\tSELECT [Logical].[Customer Dim].*   FROM [Logical].[Customer Dim] ",
+              "dataSource": "SqlServer NJSQL2022 EDW"
+            }
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Customer Geographic Hierarchy",
+            "displayFolder": ".Hierarchies",
+            "levels": [
+              {
+                "name": "Cust Continent",
+                "ordinal": 0,
+                "column": "Cust Continent"
+              },
+              {
+                "name": "Cust Country Name",
+                "ordinal": 1,
+                "column": "Cust Country Name"
+              },
+              {
+                "name": "Cust State Prov Name",
+                "ordinal": 2,
+                "column": "Cust State Prov Name"
+              },
+              {
+                "name": "Cust City",
+                "ordinal": 3,
+                "column": "Cust City"
+              },
+              {
+                "name": "Cust Name",
+                "ordinal": 4,
+                "column": "Cust Name"
+              }
+            ]
+          },
+          {
+            "name": "Customer Type Hierarchy",
+            "displayFolder": ".Hierarchies",
+            "levels": [
+              {
+                "name": "Cust Super-Type",
+                "ordinal": 0,
+                "column": "Cust Super-Type"
+              },
+              {
+                "name": "Cust Type",
+                "ordinal": 1,
+                "column": "Cust Type"
+              },
+              {
+                "name": "Cust Name",
+                "ordinal": 2,
+                "column": "Cust Name"
+              }
+            ]
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " \t\t\t\tSELECT [Logical].[Customer Dim].*   FROM [Logical].[Customer Dim] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "Customer Dim"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "Logical"
+          }
+        ]
+      },
+      {
+        "name": "Date",
+        "columns": [
+          {
+            "name": "Dt Key",
+            "dataType": "double",
+            "sourceColumn": "Dt Key",
+            "sourceProviderType": "Numeric"
+          },
+          {
+            "name": "Dt",
+            "dataType": "string",
+            "sourceColumn": "Dt",
+            "sourceProviderType": "WChar",
+            "displayFolder": "Base Attributes"
+          },
+          {
+            "name": "Dt Time Str",
+            "dataType": "dateTime",
+            "sourceColumn": "Dt Time Str",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp",
+            "displayFolder": "Base Attributes"
+          },
+          {
+            "name": "Dt Full Desc",
+            "dataType": "string",
+            "sourceColumn": "Dt Full Desc",
+            "sourceProviderType": "WChar",
+            "displayFolder": "Base Attributes"
+          },
+          {
+            "name": "Day of Wk Id",
+            "dataType": "int64",
+            "sourceColumn": "Day of Wk Id",
+            "sourceProviderType": "Integer",
+            "displayFolder": "Base Attributes"
+          },
+          {
+            "name": "Day of Wk Desc",
+            "dataType": "string",
+            "sourceColumn": "Day of Wk Desc",
+            "sourceProviderType": "WChar",
+            "displayFolder": "Base Attributes"
+          },
+          {
+            "name": "Day of Wk Desc Abbrv",
+            "dataType": "string",
+            "sourceColumn": "Day of Wk Desc Abbrv",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "Wkday Flag",
+            "dataType": "string",
+            "sourceColumn": "Wkday Flag",
+            "sourceProviderType": "Char",
+            "displayFolder": "Base Attributes"
+          },
+          {
+            "name": "Wkend Flag",
+            "dataType": "string",
+            "sourceColumn": "Wkend Flag",
+            "sourceProviderType": "Char",
+            "displayFolder": "Base Attributes"
+          },
+          {
+            "name": "Holiday Flag",
+            "dataType": "string",
+            "sourceColumn": "Holiday Flag",
+            "sourceProviderType": "Char",
+            "displayFolder": "Base Attributes"
+          },
+          {
+            "name": "Holiday Name",
+            "dataType": "string",
+            "sourceColumn": "Holiday Name",
+            "sourceProviderType": "Char",
+            "displayFolder": "Base Attributes"
+          },
+          {
+            "name": "Cal Wk",
+            "dataType": "string",
+            "sourceColumn": "Cal Wk",
+            "sourceProviderType": "Char",
+            "displayFolder": "Calendar Attributes"
+          },
+          {
+            "name": "Cal Mo",
+            "dataType": "string",
+            "sourceColumn": "Cal Mo",
+            "sourceProviderType": "WChar",
+            "displayFolder": "Calendar Attributes"
+          },
+          {
+            "name": "Cal Qtr",
+            "dataType": "string",
+            "sourceColumn": "Cal Qtr",
+            "sourceProviderType": "WChar",
+            "displayFolder": "Calendar Attributes"
+          },
+          {
+            "name": "Cal Half",
+            "dataType": "string",
+            "sourceColumn": "Cal Half",
+            "sourceProviderType": "WChar",
+            "displayFolder": "Calendar Attributes"
+          },
+          {
+            "name": "Cal Yr",
+            "dataType": "int64",
+            "sourceColumn": "Cal Yr",
+            "sourceProviderType": "Integer",
+            "displayFolder": "Calendar Attributes"
+          },
+          {
+            "name": "Cal Day of Mo Id",
+            "dataType": "int64",
+            "sourceColumn": "Cal Day of Mo Id",
+            "sourceProviderType": "Integer",
+            "displayFolder": "Calendar Attributes"
+          },
+          {
+            "name": "Cal Day of Yr Id",
+            "dataType": "int64",
+            "sourceColumn": "Cal Day of Yr Id",
+            "sourceProviderType": "Integer",
+            "displayFolder": "Calendar Attributes"
+          },
+          {
+            "name": "Cal Wk of Yr Id",
+            "dataType": "int64",
+            "sourceColumn": "Cal Wk of Yr Id",
+            "sourceProviderType": "Integer",
+            "displayFolder": "Calendar Attributes"
+          },
+          {
+            "name": "Cal Wk of Yr Desc",
+            "dataType": "string",
+            "sourceColumn": "Cal Wk of Yr Desc",
+            "sourceProviderType": "Char",
+            "displayFolder": "Calendar Attributes"
+          },
+          {
+            "name": "Cal Wk End Dt",
+            "dataType": "string",
+            "sourceColumn": "Cal Wk End Dt",
+            "sourceProviderType": "WChar",
+            "displayFolder": "Calendar Attributes"
+          },
+          {
+            "name": "Cal Mo of Yr Id",
+            "dataType": "int64",
+            "sourceColumn": "Cal Mo of Yr Id",
+            "sourceProviderType": "Integer",
+            "displayFolder": "Calendar Attributes"
+          },
+          {
+            "name": "Cal Mo of Yr Desc",
+            "dataType": "string",
+            "sourceColumn": "Cal Mo of Yr Desc",
+            "sourceProviderType": "WChar",
+            "displayFolder": "Calendar Attributes"
+          },
+          {
+            "name": "Cal Mo of Yr Abbrv",
+            "dataType": "string",
+            "sourceColumn": "Cal Mo of Yr Abbrv",
+            "sourceProviderType": "WChar",
+            "displayFolder": "Calendar Attributes"
+          },
+          {
+            "name": "Cal Mo End Dt",
+            "dataType": "string",
+            "sourceColumn": "Cal Mo End Dt",
+            "sourceProviderType": "WChar",
+            "displayFolder": "Calendar Attributes"
+          },
+          {
+            "name": "Cal Qtr of Yr Id",
+            "dataType": "int64",
+            "sourceColumn": "Cal Qtr of Yr Id",
+            "sourceProviderType": "Integer",
+            "displayFolder": "Calendar Attributes"
+          },
+          {
+            "name": "Cal Qtr of Yr Desc",
+            "dataType": "string",
+            "sourceColumn": "Cal Qtr of Yr Desc",
+            "sourceProviderType": "Char",
+            "displayFolder": "Calendar Attributes"
+          },
+          {
+            "name": "Cal Qtr End Dt",
+            "dataType": "string",
+            "sourceColumn": "Cal Qtr End Dt",
+            "sourceProviderType": "WChar",
+            "displayFolder": "Calendar Attributes"
+          },
+          {
+            "name": "Cal Half of Yr Id",
+            "dataType": "int64",
+            "sourceColumn": "Cal Half of Yr Id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "Cal Half of Yr Desc",
+            "dataType": "string",
+            "sourceColumn": "Cal Half of Yr Desc",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Fisc Wk",
+            "dataType": "string",
+            "sourceColumn": "Fisc Wk",
+            "sourceProviderType": "Char",
+            "displayFolder": "Fiscal Attributes"
+          },
+          {
+            "name": "Fisc Mo",
+            "dataType": "string",
+            "sourceColumn": "Fisc Mo",
+            "sourceProviderType": "WChar",
+            "displayFolder": "Fiscal Attributes"
+          },
+          {
+            "name": "Fisc Qtr",
+            "dataType": "string",
+            "sourceColumn": "Fisc Qtr",
+            "sourceProviderType": "Char",
+            "displayFolder": "Fiscal Attributes"
+          },
+          {
+            "name": "Fisc Half",
+            "dataType": "string",
+            "sourceColumn": "Fisc Half",
+            "sourceProviderType": "Char",
+            "displayFolder": "Fiscal Attributes"
+          },
+          {
+            "name": "Fisc Yr",
+            "dataType": "int64",
+            "sourceColumn": "Fisc Yr",
+            "sourceProviderType": "Integer",
+            "displayFolder": "Fiscal Attributes"
+          },
+          {
+            "name": "Fisc Day of Mo Id",
+            "dataType": "int64",
+            "sourceColumn": "Fisc Day of Mo Id",
+            "sourceProviderType": "BigInt",
+            "displayFolder": "Fiscal Attributes"
+          },
+          {
+            "name": "Fisc Day of Yr Id",
+            "dataType": "int64",
+            "sourceColumn": "Fisc Day of Yr Id",
+            "sourceProviderType": "BigInt",
+            "displayFolder": "Fiscal Attributes"
+          },
+          {
+            "name": "Fisc Wk of Yr Id",
+            "dataType": "int64",
+            "sourceColumn": "Fisc Wk of Yr Id",
+            "sourceProviderType": "Integer",
+            "displayFolder": "Fiscal Attributes"
+          },
+          {
+            "name": "Fisc Wk of Year Desc",
+            "dataType": "string",
+            "sourceColumn": "Fisc Wk of Year Desc",
+            "sourceProviderType": "Char",
+            "displayFolder": "Fiscal Attributes"
+          },
+          {
+            "name": "Fisc Wk End Dt",
+            "dataType": "string",
+            "sourceColumn": "Fisc Wk End Dt",
+            "sourceProviderType": "WChar",
+            "displayFolder": "Fiscal Attributes"
+          },
+          {
+            "name": "Fisc Mo of Yr Id",
+            "dataType": "int64",
+            "sourceColumn": "Fisc Mo of Yr Id",
+            "sourceProviderType": "Integer",
+            "displayFolder": "Fiscal Attributes"
+          },
+          {
+            "name": "Fisc Mo of Yr Desc",
+            "dataType": "string",
+            "sourceColumn": "Fisc Mo of Yr Desc",
+            "sourceProviderType": "Char",
+            "displayFolder": "Fiscal Attributes"
+          },
+          {
+            "name": "Fisc Mo of Yr Abbrv",
+            "dataType": "string",
+            "sourceColumn": "Fisc Mo of Yr Abbrv",
+            "sourceProviderType": "Char",
+            "displayFolder": "Fiscal Attributes"
+          },
+          {
+            "name": "Fisc Mo End Dt",
+            "dataType": "string",
+            "sourceColumn": "Fisc Mo End Dt",
+            "sourceProviderType": "WChar",
+            "displayFolder": "Fiscal Attributes"
+          },
+          {
+            "name": "Fisc Qtr of Yr Id",
+            "dataType": "int64",
+            "sourceColumn": "Fisc Qtr of Yr Id",
+            "sourceProviderType": "Integer",
+            "displayFolder": "Fiscal Attributes"
+          },
+          {
+            "name": "Fisc Qtr of Yr Desc",
+            "dataType": "string",
+            "sourceColumn": "Fisc Qtr of Yr Desc",
+            "sourceProviderType": "Char",
+            "displayFolder": "Fiscal Attributes"
+          },
+          {
+            "name": "Fisc Qtr End Dt",
+            "dataType": "string",
+            "sourceColumn": "Fisc Qtr End Dt",
+            "sourceProviderType": "WChar",
+            "displayFolder": "Fiscal Attributes"
+          },
+          {
+            "name": "Fisc Half of Yr Id",
+            "dataType": "int64",
+            "sourceColumn": "Fisc Half of Yr Id",
+            "sourceProviderType": "Integer",
+            "displayFolder": "Fiscal Attributes"
+          },
+          {
+            "name": "Fisc Half of Yr Desc",
+            "dataType": "string",
+            "sourceColumn": "Fisc Half of Yr Desc",
+            "sourceProviderType": "Char",
+            "displayFolder": "Fiscal Attributes"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Date Dim",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " \t\t\t\tSELECT [Logical].[Date Dim].*   FROM [Logical].[Date Dim] ",
+              "dataSource": "SqlServer NJSQL2022 EDW"
+            }
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Fiscal Hierarchy",
+            "levels": [
+              {
+                "name": "Fisc Yr",
+                "ordinal": 0,
+                "column": "Fisc Yr"
+              },
+              {
+                "name": "Fisc Half",
+                "ordinal": 1,
+                "column": "Fisc Half"
+              },
+              {
+                "name": "Fisc Qtr",
+                "ordinal": 2,
+                "column": "Fisc Qtr"
+              },
+              {
+                "name": "Fisc Mo",
+                "ordinal": 3,
+                "column": "Fisc Mo"
+              },
+              {
+                "name": "Fisc Wk",
+                "ordinal": 4,
+                "column": "Fisc Wk"
+              },
+              {
+                "name": "Dt",
+                "ordinal": 5,
+                "column": "Dt"
+              }
+            ]
+          },
+          {
+            "name": "Calendar Hierarchy",
+            "levels": [
+              {
+                "name": "Cal Yr",
+                "ordinal": 0,
+                "column": "Cal Yr"
+              },
+              {
+                "name": "Cal Half",
+                "ordinal": 1,
+                "column": "Cal Half"
+              },
+              {
+                "name": "Cal Qtr",
+                "ordinal": 2,
+                "column": "Cal Qtr"
+              },
+              {
+                "name": "Cal Mo",
+                "ordinal": 3,
+                "column": "Cal Mo"
+              },
+              {
+                "name": "Cal Wk",
+                "ordinal": 4,
+                "column": "Cal Wk"
+              },
+              {
+                "name": "Dt",
+                "ordinal": 5,
+                "column": "Dt"
+              }
+            ]
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " \t\t\t\tSELECT [Logical].[Date Dim].*   FROM [Logical].[Date Dim] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "Date Dim"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "Logical"
+          }
+        ]
+      },
+      {
+        "name": "Location",
+        "columns": [
+          {
+            "name": "Location Key As Was",
+            "dataType": "int64",
+            "sourceColumn": "Location Key As Was",
+            "sourceProviderType": "BigInt"
+          },
+          {
+            "name": "Location Key As Is",
+            "dataType": "int64",
+            "sourceColumn": "Location Key As Is",
+            "sourceProviderType": "BigInt"
+          },
+          {
+            "name": "Loc Code",
+            "dataType": "string",
+            "sourceColumn": "Loc Code",
+            "sourceProviderType": "Char",
+            "displayFolder": "Location Attributes"
+          },
+          {
+            "name": "Loc Name",
+            "dataType": "string",
+            "sourceColumn": "Loc Name",
+            "sourceProviderType": "Char",
+            "displayFolder": "Location Attributes"
+          },
+          {
+            "name": "Loc Street Addr",
+            "dataType": "string",
+            "sourceColumn": "Loc Street Addr",
+            "sourceProviderType": "Char",
+            "displayFolder": "Location Attributes"
+          },
+          {
+            "name": "Loc Street Addr 2",
+            "dataType": "string",
+            "sourceColumn": "Loc Street Addr 2",
+            "sourceProviderType": "Char",
+            "displayFolder": "Location Attributes"
+          },
+          {
+            "name": "Loc City",
+            "dataType": "string",
+            "sourceColumn": "Loc City",
+            "sourceProviderType": "Char",
+            "displayFolder": "Location Attributes"
+          },
+          {
+            "name": "Loc Continent",
+            "dataType": "string",
+            "sourceColumn": "Loc Continent",
+            "sourceProviderType": "Char",
+            "displayFolder": "Location Attributes"
+          },
+          {
+            "name": "Loc Country Name",
+            "dataType": "string",
+            "sourceColumn": "Loc Country Name",
+            "sourceProviderType": "Char",
+            "displayFolder": "Location Attributes"
+          },
+          {
+            "name": "Loc State Prov Abbrv",
+            "dataType": "string",
+            "sourceColumn": "Loc State Prov Abbrv",
+            "sourceProviderType": "Char",
+            "displayFolder": "Location Attributes"
+          },
+          {
+            "name": "Loc State Prov Name",
+            "dataType": "string",
+            "sourceColumn": "Loc State Prov Name",
+            "sourceProviderType": "Char",
+            "displayFolder": "Location Attributes"
+          },
+          {
+            "name": "Loc Postal Code",
+            "dataType": "string",
+            "sourceColumn": "Loc Postal Code",
+            "sourceProviderType": "Char",
+            "displayFolder": "Location Attributes"
+          },
+          {
+            "name": "Loc Virtual Flag",
+            "dataType": "string",
+            "sourceColumn": "Loc Virtual Flag",
+            "sourceProviderType": "Char",
+            "displayFolder": "Location Attributes"
+          },
+          {
+            "name": "Loc Physical Loc",
+            "dataType": "string",
+            "sourceColumn": "Loc Physical Loc",
+            "sourceProviderType": "Char",
+            "displayFolder": "Location Attributes"
+          },
+          {
+            "name": "Loc Selling Flag",
+            "dataType": "string",
+            "sourceColumn": "Loc Selling Flag",
+            "sourceProviderType": "Char",
+            "displayFolder": "Location Attributes"
+          },
+          {
+            "name": "Loc Inventory Flag",
+            "dataType": "string",
+            "sourceColumn": "Loc Inventory Flag",
+            "sourceProviderType": "Char",
+            "displayFolder": "Location Attributes"
+          },
+          {
+            "name": "Loc Super Type",
+            "dataType": "string",
+            "sourceColumn": "Loc Super Type",
+            "sourceProviderType": "Char",
+            "displayFolder": "Location Attributes"
+          },
+          {
+            "name": "Loc Type",
+            "dataType": "string",
+            "sourceColumn": "Loc Type",
+            "sourceProviderType": "Char",
+            "displayFolder": "Location Attributes"
+          },
+          {
+            "name": "Co Code",
+            "dataType": "string",
+            "sourceColumn": "Co Code",
+            "sourceProviderType": "Char",
+            "displayFolder": "Company Attributes"
+          },
+          {
+            "name": "Co Name",
+            "dataType": "string",
+            "sourceColumn": "Co Name",
+            "sourceProviderType": "Char",
+            "displayFolder": "Company Attributes"
+          },
+          {
+            "name": "Co Bus Street Addr",
+            "dataType": "string",
+            "sourceColumn": "Co Bus Street Addr",
+            "sourceProviderType": "Char",
+            "displayFolder": "Company Attributes"
+          },
+          {
+            "name": "Co Bus Street Addr 2",
+            "dataType": "string",
+            "sourceColumn": "Co Bus Street Addr 2",
+            "sourceProviderType": "Char",
+            "displayFolder": "Company Attributes"
+          },
+          {
+            "name": "Co Bus City",
+            "dataType": "string",
+            "sourceColumn": "Co Bus City",
+            "sourceProviderType": "Char",
+            "displayFolder": "Company Attributes"
+          },
+          {
+            "name": "Co Bus Continent Name",
+            "dataType": "string",
+            "sourceColumn": "Co Bus Continent Name",
+            "sourceProviderType": "Char",
+            "displayFolder": "Company Attributes"
+          },
+          {
+            "name": "Co Bus Country Name",
+            "dataType": "string",
+            "sourceColumn": "Co Bus Country Name",
+            "sourceProviderType": "Char",
+            "displayFolder": "Company Attributes"
+          },
+          {
+            "name": "Co Bus State Prov",
+            "dataType": "string",
+            "sourceColumn": "Co Bus State Prov",
+            "sourceProviderType": "Char",
+            "displayFolder": "Company Attributes"
+          },
+          {
+            "name": "Co Bus Postal Code",
+            "dataType": "string",
+            "sourceColumn": "Co Bus Postal Code",
+            "sourceProviderType": "Char",
+            "displayFolder": "Company Attributes"
+          },
+          {
+            "name": "Co Default Curr",
+            "dataType": "string",
+            "sourceColumn": "Co Default Curr",
+            "sourceProviderType": "Char",
+            "displayFolder": "Company Attributes"
+          },
+          {
+            "name": "Begin Effective Date",
+            "dataType": "dateTime",
+            "sourceColumn": "Begin Effective Date",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          },
+          {
+            "name": "End Effective Date",
+            "dataType": "dateTime",
+            "sourceColumn": "End Effective Date",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Location Dim",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " \t\t\t\tSELECT [Logical].[Location Dim].*   FROM [Logical].[Location Dim] ",
+              "dataSource": "SqlServer NJSQL2022 EDW"
+            }
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Physical Location Hierarchy",
+            "levels": [
+              {
+                "name": "Loc Physical Loc",
+                "ordinal": 0,
+                "column": "Loc Physical Loc"
+              },
+              {
+                "name": "Loc Name",
+                "ordinal": 1,
+                "column": "Loc Name"
+              }
+            ]
+          },
+          {
+            "name": "Geographic Location Hierarchy",
+            "levels": [
+              {
+                "name": "Loc Continent",
+                "ordinal": 0,
+                "column": "Loc Continent"
+              },
+              {
+                "name": "Loc Country Name",
+                "ordinal": 1,
+                "column": "Loc Country Name"
+              },
+              {
+                "name": "Loc State Prov Name",
+                "ordinal": 2,
+                "column": "Loc State Prov Name"
+              },
+              {
+                "name": "Loc City",
+                "ordinal": 3,
+                "column": "Loc City"
+              },
+              {
+                "name": "Loc Name",
+                "ordinal": 4,
+                "column": "Loc Name"
+              }
+            ]
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " \t\t\t\tSELECT [Logical].[Location Dim].*   FROM [Logical].[Location Dim] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "Location Dim"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "Logical"
+          }
+        ]
+      },
+      {
+        "name": "Season",
+        "columns": [
+          {
+            "name": "Season Key As Was",
+            "dataType": "int64",
+            "sourceColumn": "Season Key As Was",
+            "sourceProviderType": "BigInt"
+          },
+          {
+            "name": "Season Key As Is",
+            "dataType": "int64",
+            "sourceColumn": "Season Key As Is",
+            "sourceProviderType": "BigInt"
+          },
+          {
+            "name": "Brand Szn Code",
+            "dataType": "string",
+            "sourceColumn": "Brand Szn Code",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Szn",
+            "dataType": "string",
+            "sourceColumn": "Szn",
+            "sourceProviderType": "Char",
+            "displayFolder": "Base Attributes"
+          },
+          {
+            "name": "Szn Code",
+            "dataType": "string",
+            "sourceColumn": "Szn Code",
+            "sourceProviderType": "Char",
+            "displayFolder": "Base Attributes"
+          },
+          {
+            "name": "Szn Prefix",
+            "dataType": "string",
+            "sourceColumn": "Szn Prefix",
+            "sourceProviderType": "Char",
+            "displayFolder": "Base Attributes"
+          },
+          {
+            "name": "Szn Desc",
+            "dataType": "string",
+            "sourceColumn": "Szn Desc",
+            "sourceProviderType": "Char",
+            "displayFolder": "Base Attributes"
+          },
+          {
+            "name": "Szn Yr",
+            "dataType": "string",
+            "sourceColumn": "Szn Yr",
+            "sourceProviderType": "Char",
+            "displayFolder": "Base Attributes"
+          },
+          {
+            "name": "Szn Seq",
+            "dataType": "string",
+            "sourceColumn": "Szn Seq",
+            "sourceProviderType": "Char",
+            "displayFolder": "Base Attributes"
+          },
+          {
+            "name": "Szn Setting",
+            "dataType": "string",
+            "sourceColumn": "Szn Setting",
+            "sourceProviderType": "Char",
+            "displayFolder": "Base Attributes"
+          },
+          {
+            "name": "Szn Brand Name",
+            "dataType": "string",
+            "sourceColumn": "Szn Brand Name",
+            "sourceProviderType": "Char",
+            "displayFolder": "Base Attributes"
+          },
+          {
+            "name": "Szn Active Flag",
+            "dataType": "string",
+            "sourceColumn": "Szn Active Flag",
+            "sourceProviderType": "Char",
+            "displayFolder": "Base Attributes"
+          },
+          {
+            "name": "Begin Effective Date",
+            "dataType": "dateTime",
+            "sourceColumn": "Begin Effective Date",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          },
+          {
+            "name": "End Effective Date",
+            "dataType": "dateTime",
+            "sourceColumn": "End Effective Date",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Season Dim",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " \t\t\t\tSELECT [Logical].[Season Dim].*   FROM [Logical].[Season Dim] ",
+              "dataSource": "SqlServer NJSQL2022 EDW"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " \t\t\t\tSELECT [Logical].[Season Dim].*   FROM [Logical].[Season Dim] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "Season Dim"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "Logical"
+          }
+        ]
+      },
+      {
+        "name": "Product",
+        "columns": [
+          {
+            "name": "Product Key As Was",
+            "dataType": "int64",
+            "sourceColumn": "Product Key As Was",
+            "sourceProviderType": "BigInt"
+          },
+          {
+            "name": "Product Key As Is",
+            "dataType": "int64",
+            "sourceColumn": "Product Key As Is",
+            "sourceProviderType": "BigInt"
+          },
+          {
+            "name": "SKU Code",
+            "dataType": "string",
+            "sourceColumn": "SKU Code",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Size Code",
+            "dataType": "string",
+            "sourceColumn": "Size Code",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Color",
+            "dataType": "string",
+            "sourceColumn": "Color",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Color Code",
+            "dataType": "string",
+            "sourceColumn": "Color Code",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Color Desc",
+            "dataType": "string",
+            "sourceColumn": "Color Desc",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Color NRF Code",
+            "dataType": "string",
+            "sourceColumn": "Color NRF Code",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Color Family",
+            "dataType": "string",
+            "sourceColumn": "Color Family",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Color Solid/Print",
+            "dataType": "string",
+            "sourceColumn": "Color Solid/Print",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Color",
+            "dataType": "string",
+            "sourceColumn": "Style Color",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Color Carry Forward Flag",
+            "dataType": "string",
+            "sourceColumn": "Style Color Carry Forward Flag",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Color Dropped Flag",
+            "dataType": "string",
+            "sourceColumn": "Style Color Dropped Flag",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Color Sold Out Flag",
+            "dataType": "string",
+            "sourceColumn": "Style Color Sold Out Flag",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Color Called Out Dt",
+            "dataType": "string",
+            "sourceColumn": "Style Color Called Out Dt",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Color Dropped Dt",
+            "dataType": "string",
+            "sourceColumn": "Style Color Dropped Dt",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Color Sold Out Dt",
+            "dataType": "string",
+            "sourceColumn": "Style Color Sold Out Dt",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Color Status",
+            "dataType": "string",
+            "sourceColumn": "Style Color Status",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Color MSRP USD",
+            "dataType": "string",
+            "sourceColumn": "Style Color MSRP USD",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Color Price",
+            "dataType": "string",
+            "sourceColumn": "Style Color Price",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Color Cost",
+            "dataType": "string",
+            "sourceColumn": "Style Color Cost",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Color MOQ",
+            "dataType": "string",
+            "sourceColumn": "Style Color MOQ",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style",
+            "dataType": "string",
+            "sourceColumn": "Style",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Num",
+            "dataType": "string",
+            "sourceColumn": "Style Num",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Desc",
+            "dataType": "string",
+            "sourceColumn": "Style Desc",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Div",
+            "dataType": "string",
+            "sourceColumn": "Style Div",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Master Brand",
+            "dataType": "string",
+            "sourceColumn": "Style Master Brand",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Brand",
+            "dataType": "string",
+            "sourceColumn": "Style Brand",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Bus Unit",
+            "dataType": "string",
+            "sourceColumn": "Style Bus Unit",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Market Segment",
+            "dataType": "string",
+            "sourceColumn": "Style Market Segment",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Rtl Dept Desc",
+            "dataType": "string",
+            "sourceColumn": "Style Rtl Dept Desc",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Class Desc",
+            "dataType": "string",
+            "sourceColumn": "Style Class Desc",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Fabrication",
+            "dataType": "string",
+            "sourceColumn": "Style Fabrication",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Fabrication Content",
+            "dataType": "string",
+            "sourceColumn": "Style Fabrication Content",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Fabric Construction",
+            "dataType": "string",
+            "sourceColumn": "Style Fabric Construction",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Primary Motif",
+            "dataType": "string",
+            "sourceColumn": "Style Primary Motif",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Secondary Motif",
+            "dataType": "string",
+            "sourceColumn": "Style Secondary Motif",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Preferred Vendor Code",
+            "dataType": "string",
+            "sourceColumn": "Style Preferred Vendor Code",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Addl Attr",
+            "dataType": "string",
+            "sourceColumn": "Style Addl Attr",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Cert 1",
+            "dataType": "string",
+            "sourceColumn": "Style Cert 1",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Cert 2",
+            "dataType": "string",
+            "sourceColumn": "Style Cert 2",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Cert 3",
+            "dataType": "string",
+            "sourceColumn": "Style Cert 3",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Cert 4",
+            "dataType": "string",
+            "sourceColumn": "Style Cert 4",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Cert 5",
+            "dataType": "string",
+            "sourceColumn": "Style Cert 5",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Collection",
+            "dataType": "string",
+            "sourceColumn": "Style Collection",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Converted from Style",
+            "dataType": "string",
+            "sourceColumn": "Style Converted from Style",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Country of Origin",
+            "dataType": "string",
+            "sourceColumn": "Style Country of Origin",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Customer",
+            "dataType": "string",
+            "sourceColumn": "Style Customer",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Design Origin",
+            "dataType": "string",
+            "sourceColumn": "Style Design Origin",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Designer",
+            "dataType": "string",
+            "sourceColumn": "Style Designer",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Exclusive Flag",
+            "dataType": "string",
+            "sourceColumn": "Style Exclusive Flag",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Finishing Attributes",
+            "dataType": "string",
+            "sourceColumn": "Style Finishing Attributes",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Fur",
+            "dataType": "string",
+            "sourceColumn": "Style Fur",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style HTS Code",
+            "dataType": "string",
+            "sourceColumn": "Style HTS Code",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style License Group",
+            "dataType": "string",
+            "sourceColumn": "Style License Group",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Packed Unit Weight",
+            "dataType": "string",
+            "sourceColumn": "Style Packed Unit Weight",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Patent",
+            "dataType": "string",
+            "sourceColumn": "Style Patent",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style PD Manager",
+            "dataType": "string",
+            "sourceColumn": "Style PD Manager",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Print Technique",
+            "dataType": "string",
+            "sourceColumn": "Style Print Technique",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Product Dimension",
+            "dataType": "string",
+            "sourceColumn": "Style Product Dimension",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Sales Market",
+            "dataType": "string",
+            "sourceColumn": "Style Sales Market",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Screen Count",
+            "dataType": "string",
+            "sourceColumn": "Style Screen Count",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Selling Attributes",
+            "dataType": "string",
+            "sourceColumn": "Style Selling Attributes",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Ship Unit Height",
+            "dataType": "string",
+            "sourceColumn": "Style Ship Unit Height",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Ship Unit Length",
+            "dataType": "string",
+            "sourceColumn": "Style Ship Unit Length",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Ship Unit Width",
+            "dataType": "string",
+            "sourceColumn": "Style Ship Unit Width",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Silhouette",
+            "dataType": "string",
+            "sourceColumn": "Style Silhouette",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Size Scale",
+            "dataType": "string",
+            "sourceColumn": "Style Size Scale",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Stage",
+            "dataType": "string",
+            "sourceColumn": "Style Stage",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Structure",
+            "dataType": "string",
+            "sourceColumn": "Style Structure",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Prefix",
+            "dataType": "string",
+            "sourceColumn": "Style Prefix",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Technical Attributes",
+            "dataType": "string",
+            "sourceColumn": "Style Technical Attributes",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Customer Style Number",
+            "dataType": "string",
+            "sourceColumn": "Style Customer Style Number",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Key Concept",
+            "dataType": "string",
+            "sourceColumn": "Style Key Concept",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Lead Time",
+            "dataType": "string",
+            "sourceColumn": "Style Lead Time",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Momme Weight",
+            "dataType": "string",
+            "sourceColumn": "Style Momme Weight",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Product Sub Class",
+            "dataType": "string",
+            "sourceColumn": "Style Product Sub Class",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Style Ref Num",
+            "dataType": "string",
+            "sourceColumn": "Style Ref Num",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Begin Effective Date",
+            "dataType": "dateTime",
+            "sourceColumn": "Begin Effective Date",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          },
+          {
+            "name": "End Effective Date",
+            "dataType": "dateTime",
+            "sourceColumn": "End Effective Date",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Product Dim",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " \t\t\t\tSELECT [Logical].[Product Dim].*   FROM [Logical].[Product Dim] ",
+              "dataSource": "SqlServer NJSQL2022 EDW"
+            }
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Product Hierarchy",
+            "levels": [
+              {
+                "name": "Style Num",
+                "ordinal": 0,
+                "column": "Style Num"
+              },
+              {
+                "name": "Style Color",
+                "ordinal": 1,
+                "column": "Style Color"
+              },
+              {
+                "name": "SKU Code",
+                "ordinal": 2,
+                "column": "SKU Code"
+              }
+            ]
+          },
+          {
+            "name": "Main Classification Hierarchy",
+            "levels": [
+              {
+                "name": "Style Div",
+                "ordinal": 0,
+                "column": "Style Div"
+              },
+              {
+                "name": "Style Master Brand",
+                "ordinal": 1,
+                "column": "Style Master Brand"
+              },
+              {
+                "name": "Style Rtl Dept Desc",
+                "ordinal": 2,
+                "column": "Style Rtl Dept Desc"
+              },
+              {
+                "name": "Style Num",
+                "ordinal": 3,
+                "column": "Style Num"
+              }
+            ]
+          },
+          {
+            "name": "Alternate Classification Hierarchy",
+            "levels": [
+              {
+                "name": "Style Div",
+                "ordinal": 0,
+                "column": "Style Div"
+              },
+              {
+                "name": "Style Master Brand",
+                "ordinal": 1,
+                "column": "Style Master Brand"
+              },
+              {
+                "name": "Style Class Desc",
+                "ordinal": 2,
+                "column": "Style Class Desc"
+              },
+              {
+                "name": "Style Product Sub Class",
+                "ordinal": 3,
+                "column": "Style Product Sub Class"
+              },
+              {
+                "name": "Style Num",
+                "ordinal": 4,
+                "column": "Style Num"
+              }
+            ]
+          },
+          {
+            "name": "Fabrication Hierarchy",
+            "levels": [
+              {
+                "name": "Style Fabrication",
+                "ordinal": 0,
+                "column": "Style Fabrication"
+              },
+              {
+                "name": "Style Fabrication Content",
+                "ordinal": 1,
+                "column": "Style Fabrication Content"
+              },
+              {
+                "name": "Style Primary Motif",
+                "ordinal": 2,
+                "column": "Style Primary Motif"
+              },
+              {
+                "name": "Style Secondary Motif",
+                "ordinal": 3,
+                "column": "Style Secondary Motif"
+              }
+            ]
+          },
+          {
+            "name": "Design Hierarchy"
+          },
+          {
+            "name": "Color Hierarchy",
+            "levels": [
+              {
+                "name": "Color Family",
+                "ordinal": 0,
+                "column": "Color Family"
+              },
+              {
+                "name": "Color Desc",
+                "ordinal": 1,
+                "column": "Color Desc"
+              },
+              {
+                "name": "Style Color",
+                "ordinal": 2,
+                "column": "Style Color"
+              }
+            ]
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " \t\t\t\tSELECT [Logical].[Product Dim].*   FROM [Logical].[Product Dim] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "Product Dim"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "Logical"
+          }
+        ]
+      },
+      {
+        "name": "Sales",
+        "isHidden": true,
+        "columns": [
+          {
+            "name": "Product_Key_As_Was",
+            "dataType": "int64",
+            "sourceColumn": "Product_Key_As_Was",
+            "sourceProviderType": "BigInt"
+          },
+          {
+            "name": "Customer_Key_As_Was",
+            "dataType": "int64",
+            "sourceColumn": "Customer_Key_As_Was",
+            "sourceProviderType": "BigInt"
+          },
+          {
+            "name": "Season_Key_As_Was",
+            "dataType": "int64",
+            "sourceColumn": "Season_Key_As_Was",
+            "sourceProviderType": "BigInt"
+          },
+          {
+            "name": "Order_Entered_Date_Key",
+            "dataType": "double",
+            "sourceColumn": "Order_Entered_Date_Key",
+            "sourceProviderType": "Numeric"
+          },
+          {
+            "name": "Order_Start_Date_Key",
+            "dataType": "double",
+            "sourceColumn": "Order_Start_Date_Key",
+            "sourceProviderType": "Numeric"
+          },
+          {
+            "name": "Order_Cancel_Date_Key",
+            "dataType": "double",
+            "sourceColumn": "Order_Cancel_Date_Key",
+            "sourceProviderType": "Numeric"
+          },
+          {
+            "name": "Shipped_Date_Key",
+            "dataType": "double",
+            "sourceColumn": "Shipped_Date_Key",
+            "sourceProviderType": "Numeric"
+          },
+          {
+            "name": "Ship_To_Location_Key",
+            "dataType": "int64",
+            "sourceColumn": "Ship_To_Location_Key",
+            "sourceProviderType": "BigInt"
+          },
+          {
+            "name": "Ship_From_Location_Key",
+            "dataType": "int64",
+            "sourceColumn": "Ship_From_Location_Key",
+            "sourceProviderType": "BigInt"
+          },
+          {
+            "name": "Mark_For_Location_Key",
+            "dataType": "int64",
+            "sourceColumn": "Mark_For_Location_Key",
+            "sourceProviderType": "BigInt"
+          },
+          {
+            "name": "Ordered_Location_Key",
+            "dataType": "int64",
+            "sourceColumn": "Ordered_Location_Key",
+            "sourceProviderType": "BigInt"
+          },
+          {
+            "name": "Booked_Units",
+            "dataType": "int64",
+            "sourceColumn": "Booked_Units",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "Booked_Amount",
+            "dataType": "double",
+            "isHidden": true,
+            "sourceColumn": "Booked_Amount",
+            "sourceProviderType": "Double"
+          },
+          {
+            "name": "Echo Order #",
+            "dataType": "double",
+            "sourceColumn": "Echo Order #",
+            "sourceProviderType": "Numeric"
+          },
+          {
+            "name": "Custom PO #",
+            "dataType": "string",
+            "sourceColumn": "Custom PO #",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "Customer Department #",
+            "dataType": "string",
+            "sourceColumn": "Customer Department #",
+            "sourceProviderType": "Char"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Sales Fact",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " \t\t\t\tSELECT [Logical].[Sales Fact].*   FROM [Logical].[Sales Fact] ",
+              "dataSource": "SqlServer NJSQL2022 EDW"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " \t\t\t\tSELECT [Logical].[Sales Fact].*   FROM [Logical].[Sales Fact] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "Sales Fact"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "Logical"
+          }
+        ]
+      },
+      {
+        "name": "Security_Product",
+        "columns": [
+          {
+            "name": "Product Key As Was",
+            "dataType": "int64",
+            "sourceColumn": "Product Key As Was",
+            "sourceProviderType": "BigInt"
+          },
+          {
+            "name": "Style Brand",
+            "dataType": "string",
+            "sourceColumn": "Style Brand",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "UserEmail",
+            "dataType": "string",
+            "sourceColumn": "UserEmail",
+            "sourceProviderType": "WChar"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "vw_Security_Product",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " \t\t\t\tSELECT [Warehouse].[vw_Security_Product].*   FROM [Warehouse].[vw_Security_Product] ",
+              "dataSource": "SqlServer NJSQL2022 EDW"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " \t\t\t\tSELECT [Warehouse].[vw_Security_Product].*   FROM [Warehouse].[vw_Security_Product] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "vw_Security_Product"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "Warehouse"
+          }
+        ]
+      },
+      {
+        "name": "Calculations",
+        "columns": [
+          {
+            "type": "calculatedTableColumn",
+            "name": "Value",
+            "dataType": "string",
+            "isNameInferred": true,
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "sourceColumn": "[Value]"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "CalculatedTable 1",
+            "source": {
+              "type": "calculated",
+              "expression": "{\"\"}"
+            }
+          }
+        ],
+        "measures": [
+          {
+            "name": "Booked Units",
+            "expression": " sum(Sales[Booked_Units])",
+            "displayFolder": "Sales Calculations"
+          }
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "name": "a3008048-e16d-4340-8d05-728c3f297143",
+        "fromTable": "Sales",
+        "fromColumn": "Product_Key_As_Was",
+        "toTable": "Product",
+        "toColumn": "Product Key As Was"
+      },
+      {
+        "name": "bba2da99-ae6a-4866-b1de-06be912d79d9",
+        "fromTable": "Sales",
+        "fromColumn": "Customer_Key_As_Was",
+        "toTable": "Customer",
+        "toColumn": "Customer Key As Was"
+      },
+      {
+        "name": "26a2aa2f-d38f-41ed-be59-2f3bf62e1e5f",
+        "fromTable": "Sales",
+        "fromColumn": "Season_Key_As_Was",
+        "toTable": "Season",
+        "toColumn": "Season Key As Was"
+      },
+      {
+        "name": "bca35fac-4081-4706-8915-5f8f46a14710",
+        "fromTable": "Sales",
+        "fromColumn": "Shipped_Date_Key",
+        "toTable": "Date",
+        "toColumn": "Dt Key"
+      },
+      {
+        "name": "7c81e33b-7f88-422c-9a17-b04e1ea1ae00",
+        "fromTable": "Sales",
+        "fromColumn": "Order_Cancel_Date_Key",
+        "toTable": "Date",
+        "toColumn": "Dt Key",
+        "isActive": false
+      }
+    ],
+    "annotations": [
+      {
+        "name": "ClientCompatibilityLevel",
+        "value": "400"
+      }
+    ]
+  },
+  "id": "SemanticModel"
+}
